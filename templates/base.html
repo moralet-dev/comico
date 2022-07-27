@@ -1,0 +1,517 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Home 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description website">
+    <meta name="author" content="Maksym Blank">
+    <meta name="keywords" content="website, with, meta, tags">
+    <meta name="robots" content="noindex, follow">
+    <meta name="revisit-after" content="5 month">
+    <meta name="image" content="http://mywebsite.com/image.jpg">
+    <meta name="og:title" content="Title website">
+    <meta name="og:description" content="Description website">
+    <meta name="og:image" content="http://mywebsite.com/image.jpg">
+    <meta name="og:site_name" content="My Website">
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Title website">
+    <meta name="twitter:description" content="Description website">
+    <link href="{% static 'css/plugins/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'css/plugins/slick.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/ion.rangeSlider.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'fonts/flaticon/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'fonts/font-awesome.min.css' %}" rel="stylesheet">
+</head>
+
+<body class="btn-style-4 btn-pill sidebar-style-3">
+<!--Section sidebar Start-->
+<aside class="sigma_aside sigma_aside-desktop">
+    <div class="sidebar">
+        <!-- About Widget -->
+        <div class="widget widget-about">
+            <h5 class="widget-title">About Comico</h5>
+            <p>A comic book, also called comic magazine or (in the . United Kingdom and Ireland) simply comic, is a
+                publication.</p>
+            <ul class="sigma_social-icons has-border justify-content-start">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Recent Posts Widget -->
+        <div class="widget widget-sigma-recent-posts">
+            <h5 class="widget-title">Popular Feeds</h5>
+            <div class="sigma_recent-post">
+                <a href="#" class="recent-post-image">
+                    <img src="{% static 'img/blog-details/80x80.jpg' %}" alt="img">
+                </a>
+                <div class="recent-post-descr">
+                    <h6>
+
+                        <a href="#">More Early Issues From The Stapled Collection</a>
+
+                    </h6>
+                    <a href="#" class="date">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        June 4, 2021
+                    </a>
+                </div>
+            </div>
+            <div class="sigma_recent-post">
+                <a href="#" class="recent-post-image">
+                    <img src="{% static 'img/blog-details/80x80-0.jpg' %}" alt="img">
+                </a>
+                <div class="recent-post-descr">
+                    <h6>
+
+                        <a href="#">This is a test to try out how things work</a>
+
+                    </h6>
+                    <a href="#" class="date">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        January 4, 2021
+                    </a>
+                </div>
+            </div>
+            <div class="sigma_recent-post">
+                <a href="#" class="recent-post-image">
+                    <img src="{% static 'img/blog-details/80x80-1.jpg' %}" alt="img">
+                </a>
+                <div class="recent-post-descr">
+                    <h6>
+
+                        <a href="#">Quarantine Comics GN signed by Rachael Smith</a>
+
+                    </h6>
+                    <a href="#" class="date">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        March 19, 2021
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe Widget -->
+        <div class="widget widget-newsletter">
+            <h5 class="widget-title">Join Newsletter</h5>
+            <form method="post">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="button" class="btn-block mt-4">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</aside>
+<!--Section sidebar End-->
+
+<!--Section overlay Start-->
+<div class="sigma_aside-overlay aside-trigger-right">
+</div>
+<!--Section overlay End-->
+
+<!--Section Start-->
+<aside class="sigma_aside">
+    <div class="sigma_close aside-trigger">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="sigma_logo-wrapper">
+        <a class="sigma_logo" href="../store/templates/store/index.html">
+            <img src="{% static 'img/logo.png' %}" alt="logo">
+        </a>
+    </div>
+    <ul class="navbar-nav">
+        <li class="menu-item">
+            <a href="{% url 'store:home' %}">Home</a>
+        </li>
+        <!--
+        <li class="menu-item menu-item-has-children">
+            <a href="#">Pages</a>
+            <ul class="sub-menu">
+                <li class="menu-item">
+                    <a href="#">About us</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Login</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Signup</a>
+                </li>
+            </ul>
+        </li>
+        -->
+        <li class="menu-item menu-item-has-children">
+            <a href="#">Shop</a>
+            <ul class="sub-menu">
+                <li class="menu-item">
+                    <a href="#">Shop</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Product details</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Cart</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Wishlist</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Checkout</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item menu-item-has-children">
+            <a href="#">Blog</a>
+            <ul class="sub-menu">
+                <li class="menu-item">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="menu-item">
+                    <a href="blog-details.html">Blog details</a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="contact-us.html">Contact us</a>
+        </li>
+    </ul>
+</aside>
+<!--Section End-->
+
+<div class="sigma_aside-overlay aside-trigger">
+</div>
+<!--Section Header Start-->
+<header class="sigma_header style-5 can-sticky">
+    <div class="sigma_header-top dark-bg d-none d-md-block">
+        <div class="container">
+            <div class="sigma_header-top-inner">
+                <div class="sigma_header-top-links">
+                    <ul class="sigma_header-top-nav">
+                        <li>
+                            <a href="#">
+                                <i class="fal fa-envelope"></i>
+                                info@example.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fal fa-map-marker-alt"></i>
+                                Oakwood, Los Angeles, CA 1098
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sigma_header-top-contacts">
+                    <ul class="sigma_header-top-nav">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-google"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sigma_header-middle">
+        <div class="container">
+            <div class="navbar">
+                <div class="sigma_logo-wrapper">
+                    <a class="sigma_logo" href="{% url 'store:home' %}">
+                        <img src="{% static '/img/logo.png' %}" alt="logo">
+                    </a>
+                </div>
+                <div class="d-none d-lg-flex align-items-center">
+                    <div class="sigma_header-top-links important-links">
+                        <ul class="sigma_header-top-nav">
+                            <li>
+                                <a href="#">
+                                    <i class="fal fa-phone"></i>
+                                    <div>
+                                        <p>Our Address</p>
+                                        <p><b>Drive Chicago IL</b>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    <div>
+                                        <p>Call Us</p>
+                                        <p><b>224-359-5495</b>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact-us.html" class="sigma_btn ml-5">Get a quote</a>
+                </div>
+                <div class="sigma_header-controls style-2 d-block d-lg-none">
+                    <ul class="sigma_header-controls-inner">
+                        <li class="aside-toggle aside-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sigma_header-bottom">
+        <div class="container">
+            <div class="navbar">
+                <ul class="navbar-nav">
+                    <li class="menu-item">
+                        <a href="{% url 'store:home' %}">Home</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Shop</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="shop.html">Shop</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="cart.html">Cart</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="wishlist.html">Wishlist</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="checkout.html">Checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="about-us.html">About us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="signup.html">Signup</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="blog-details.html">Blog details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact-us.html">Contact us</a>
+                    </li>
+                </ul>
+                <div class="sigma_header-controls style-2">
+                    <ul class="sigma_header-controls-inner">
+                        <li class="search-trigger header-controls-item d-none d-sm-block">
+                            <a class="sigma_header-control-search" title="Search" href="#">
+                                <i class="fal fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="cart-trigger header-controls-item d-none d-sm-block">
+                            <a class="sigma_header-control-cart" title="Your Cart" href="cart.html">
+                                <i class="fal fa-shopping-basket"></i>
+                            </a>
+                        </li>
+                        <li class="aside-toggle aside-trigger-right desktop-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                        <li class="aside-toggle aside-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="search-form-wrapper">
+    <div class="search-trigger sigma_close">
+        <span></span>
+        <span></span>
+    </div>
+    <form class="search-form" method="post">
+        <input type="text" placeholder="Search..." value="">
+        <button type="submit" class="search-btn">
+            <i class="fal fa-search m-0"></i>
+        </button>
+    </form>
+</div>
+<!--Section header End-->
+<!--Section preloader Start-->
+<div class="sigma_preloader sigma_preloader-eclipse">
+    <div class="sigma_preloader-inner">
+        <div class="preloader-eclipse">
+            <div class="preloader-eclipse-inner">
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section preloader End-->
+<!--Section aside newsletter Start-->
+<div class="sigma_popup">
+    <div class="sigma_close newsletter-popup-trigger">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="sigma_popup-text">
+        <h3>Join Our Newsletter</h3>
+        <p>New Manga-Just Added.</p>
+    </div>
+    <form method="post" class="text-center">
+        <div class="form-group">
+            <input type="email" placeholder="Email Address" class="form-control" name="newsletter-email" value="">
+        </div>
+        <button type="submit" name="button" class="btn-block">Subscribe</button>
+    </form>
+</div>
+<!--Section aside newsletter End-->
+
+{% block main_content %}
+{% endblock main_content %}
+
+<!--Section Start-->
+<div class="sigma_top style-2">
+    <i class="far fa-arrow-up"></i>
+</div>
+<!--Section End-->
+<!--Section Start-->
+<footer class="sigma_footer style-3 sigma_footer-dark pb-0">
+    <div class="sigma_footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sigma_footer-logo mb-4 text-center text-sm-left">
+                        <img src="{% static 'img/logo-light.png' %}" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="sigma_footer-widget">
+                        <p class="mb-4">rutrum congue leo eget malesuada. Nulla porttitor
+                            <br>accumsan tincidunt. Vestibulum ante ipsum primis</p>
+                        <ul class="sigma_social-icons justify-content-sm-start">
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <div class="sigma_footer-widget">
+                        <ul class="sigma_footer-links">
+                            <li>
+                                <a href="contact-us.html">Connect US</a>
+                            </li>
+                            <li>
+                                <a href="shop.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="shop.html">Ecommerce</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <div class="sigma_footer-widget">
+                        <ul class="sigma_footer-links">
+                            <li>
+                                <a href="../store/templates/store/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html">About</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <div class="sigma_footer-widget">
+                        <ul class="sigma_footer-links">
+                            <li>
+                                <a href="cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">Checkout</a>
+                            </li>
+                            <li>
+                                <a href="signup.html">Signup</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sigma_footer-bottom">
+            <div class="sigma_footer-copyright m-0">
+                <p class="mb-0">© Comico -
+                    <a href="#">2021</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Section End-->
+<script src="{% static 'js/plugins/jquery-3.4.1.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/popper.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/jquery.instagramFeed.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/slick.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/imagesloaded.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/jquery.magnific-popup.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/jquery.counterup.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/jquery.inview.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/ion.rangeSlider.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/plugins/jquery.validate.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+</body>
+
+
+</html>
